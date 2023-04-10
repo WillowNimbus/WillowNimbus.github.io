@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Pacifico&family=Roboto&family=Roboto+Slab&display=swap');
+
+/*The Color Pallete*/
+:root {
+    /* Primary Colors */
+    --color-primary-1: #0a2e36;
+    --color-primary-2: #174955;
+    --color-primary-3: #236d7c;
+    --color-primary-4: #2f8fa3;
+    --color-primary-5: #3ba4b8;
+
+    /* Secondary Colors */
+    --color-secondary-1: #c6d4df;
+    --color-secondary-2: #dce5e9;
+    --color-secondary-3: #f0f2f4;
+
+    /* Accent Colors */
+    --color-accent-1: #ffd000;
+    --color-accent-2: #ff7f00;
+    --color-accent-3: #ff00b7;
+    --color-accent-4: #b50072;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: var(--color-secondary-3);
+}
+
+#background {
+    background: linear-gradient(to bottom right, var(--color-primary-1), var(--color-primary-5));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#brandName{
+    font-family: 'Pacifico', cursive;
+    color: var(--color-primary-1);
+    
+}
+
+#nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-secondary-2);
+}
+
+#nav_menus{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: row-reverse;
+    color: var(--color-primary-1);
+    margin: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#none{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
